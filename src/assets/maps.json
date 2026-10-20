@@ -1,0 +1,46 @@
+{
+    "barnacle": {
+        "name": "Barnacle & Dime",
+        "imgName": "Barnacle-RM-OVER.png",
+        "svgName": "Barnacle-Optimized-RM-OVER.svg",
+        "regions": {
+            "region01": "region01",
+            "region02": "region02",
+            "region03": "region03",
+            "region04": "region04",
+            "region05": "region05",
+            "region06": "region06",
+            "region07": "region07",
+            "region08": "region08",
+            "region09": "region09",
+            "region10": "region10",
+            "region11": "region11",
+            "region12": "region12",
+            "region13": "region13",
+            "region14": "region14"
+        }
+    },
+    "bluefin": {
+        "name": "Bluefin Depot",
+        "imgName": "Bluefin-CB-OVER.png",
+        "svgName": "Bluefin-Optimized-CB-OVER.svg",
+        "regions": {
+            "region01": "region01",
+            "region02": "region02",
+            "region03": "region03",
+            "region04": "region04",
+            "region05": "region05",
+            "region06": "region06",
+            "region07": "region07",
+            "region08": "region08",
+            "region09": "region09",
+            "region10": "region10",
+            "region11": "region11",
+            "region12": "region12",
+            "region13": "region13",
+            "region14": "region14",
+            "region15": "region15",
+            "region16": "region16"
+        }
+    }
+}
