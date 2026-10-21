@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type MouseEvent } from 'react';
 import maps from "../assets/maps.json";
 
 const importedImages = import.meta.glob('../assets/splat3/splat3maps/*.png', { eager: true }) as Record<string, { default: string }>;
@@ -35,18 +35,26 @@ export function MapDisplay({ data }: MapDisplayProps) {
         return <p>Please select a map from the dropdown.</p>;
     }
 
-    console.log(data.mapKey);
+    const curMap = maps[data.mapKey as keyof typeof maps];
 
     const imageStr = importedImages[data.imagePath].default;
     const MapSVG = importedSVGs[data.svgPath] as React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 
+    function handleClick(e: MouseEvent<SVGSVGElement, globalThis.MouseEvent>){
+        const path = (e.target as HTMLElement).closest("path");
+
+        console.log(path);
+        console.log(path?.id);
+        console.log(curMap["regions"][path?.id as keyof typeof curMap["regions"]]);
+    }
+
     return <div>
         <img
             src={imageStr}
-            alt={"Map of " + maps[data.mapKey as keyof typeof maps]["name"]}
+            alt={"Map of " + curMap["name"]}
             className='absolute'
         />
-        <MapSVG className='absolute'></MapSVG>
+        <MapSVG onClick={(e) => handleClick(e)} className='absolute'></MapSVG>
     </div>
 
 }
