@@ -2,7 +2,7 @@
     "barnacle": {
         "name": "Barnacle & Dime",
         "imgName": "Barnacle-RM-OVER.png",
-        "svgName": "Barnacle-Optimized-RM-OVER.svg",
+        "svgName": "Barnacle-Optimized-RM-OVER.tsx",
         "regions": {
             "region01": "Mid",
             "region02": "Snipe",
@@ -23,7 +23,7 @@
     "bluefin": {
         "name": "Bluefin Depot",
         "imgName": "Bluefin-CB-OVER.png",
-        "svgName": "Bluefin-Optimized-CB-OVER.svg",
+        "svgName": "Bluefin-Optimized-CB-OVER.tsx",
         "regions": {
             "region01": "region01",
             "region02": "region02",
