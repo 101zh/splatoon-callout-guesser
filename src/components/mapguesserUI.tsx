@@ -55,10 +55,6 @@ export default function MapGuesserUI() {
             key = ""
         }
 
-        console.log(regionKeys)
-        // console.log("new key: " + key);
-        // console.log("new name: " + currentMapData.mapInfo.regionNames[key]);
-
         setCallout({
             key: key,
             name: currentMapData.mapInfo.regionNames[key]
