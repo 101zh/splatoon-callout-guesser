@@ -11,11 +11,11 @@ interface MapDisplayProps {
     data: {
         mapInfo: MapJsonEntry;
     } | null;
-    onMapClick: (clickData: SVGPathElement | null) => void;
+    onRegionClick: (nextPathAttrs: RegionProps[], clickData: MouseEvent<SVGPathElement, globalThis.MouseEvent>, index: number) => void;
 }
 
-export default function MapDisplay({ onMapClick, data }: MapDisplayProps) {
-    if (!data) {
+export default function MapDisplay({ onRegionClick, data }: MapDisplayProps) {
+    if (data == null) {
         return <p>Please select a map from the dropdown.</p>;
     }
 
@@ -23,10 +23,6 @@ export default function MapDisplay({ onMapClick, data }: MapDisplayProps) {
     const imagePath = splat3MapImageDir + data.mapInfo.imgName;
 
     const imageStr = importedImages[imagePath].default;
-
-    function handleClick(nextPathAttrs: RegionProps[], clickData: MouseEvent<SVGPathElement, globalThis.MouseEvent>, index: number) {
-        nextPathAttrs[index].fill = "rgb(255,0,0)";
-    }
 
     return <div>
         <img
@@ -37,7 +33,7 @@ export default function MapDisplay({ onMapClick, data }: MapDisplayProps) {
         <MapSVG
             className="absolute"
             calloutRegions={MAP_REGIONS[data.mapInfo.key]}
-            onRegionClick={handleClick}
+            onRegionClick={onRegionClick}
         />
     </div>
 }
