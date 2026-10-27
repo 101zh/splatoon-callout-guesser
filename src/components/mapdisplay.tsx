@@ -31,6 +31,7 @@ export default function MapDisplay({ onRegionClick, data }: MapDisplayProps) {
             className='absolute'
         />
         <MapSVG
+            key={data.mapInfo.key}
             className="absolute"
             calloutRegions={MAP_REGIONS[data.mapInfo.key]}
             onRegionClick={onRegionClick}
