@@ -1,36 +1,28 @@
-import maps from "../assets/maps.json";
-import { type MapJsonEntry } from "./mapguesserUI";
-
-const splat3MapImageDir: string = "../assets/splat3/splat3maps/";
-const splat3SVGDir: string = "../assets/splat3mapsSVG/";
+import MAP_INFO from "../assets/MapInfo.json";
+import type { MapJsonEntry } from "./mapguesserUI";
 
 interface MapSelectorProps {
-    onMapChange: (mapData: { imagePath: string; svgPath: string; mapInfo: MapJsonEntry }) => void;
+    onMapChange: (mapData: { mapInfo: MapJsonEntry } | null) => void;
 }
 
 export default function MapSelector({ onMapChange }: MapSelectorProps) {
 
-    function getImage(mapSelector: React.ChangeEvent<HTMLSelectElement, HTMLSelectElement>) {
+    function onChange(mapSelector: React.ChangeEvent<HTMLSelectElement, HTMLSelectElement>) {
         const selectedKey = mapSelector.target.value;
-        if (selectedKey == "" || selectedKey == null) return;
+        if (!(selectedKey in MAP_INFO)) { onMapChange(null); return; }
 
-        const mapInfo = maps[selectedKey as keyof typeof maps] as MapJsonEntry;
+        const mapInfo = MAP_INFO[selectedKey as keyof typeof MAP_INFO] as MapJsonEntry;
 
-        if (mapInfo) {
-            const imagePath = splat3MapImageDir + mapInfo.imgName;
-            const svgPath = splat3SVGDir + mapInfo.svgName;
-
-            onMapChange({ imagePath, svgPath, mapInfo });
-        }
+        onMapChange({ mapInfo });
     }
 
     return <>
         <label>
-            Map:
-            <select onChange={(e) => getImage(e)}>
+            {"Map: "}
+            <select onChange={(e) => onChange(e)}>
                 <option value="">-- Select a map --</option>
                 {
-                    Object.entries(maps).map(([key, value]) => (
+                    Object.entries(MAP_INFO).map(([key, value]) => (
                         <option key={key} value={key}>{value.name}</option>
                     ))
                 }

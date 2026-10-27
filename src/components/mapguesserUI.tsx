@@ -4,16 +4,16 @@ import MapDisplay from './mapdisplay';
 
 export interface MapJsonEntry {
     name: string;
+    key : string;
     imgName: string;
-    svgName: string;
-    regions: Record<string, string>
+    regionNames: Record<string, string>
 }
 
 var curMap: MapJsonEntry | null = null;
 var mapLocations: string[] | null = null;
 
 export default function MapGuesserUI() {
-    const [currentMapData, setCurrentMapData] = useState<{ imagePath: string; svgPath: string; mapInfo: MapJsonEntry } | null>(null);
+    const [currentMapData, setCurrentMapData] = useState<{ mapInfo: MapJsonEntry } | null>(null);
     const [currentGuessRegion, setGuessRegion] = useState<{ callout: string } | null>(null);
 
 
@@ -27,7 +27,7 @@ export default function MapGuesserUI() {
             return;
         }
 
-        if (currentGuessRegion.callout == curMap.regions[e.id]) {
+        if (currentGuessRegion.callout == curMap.regionNames[e.id]) {
             var bounds = e.getBBox();
             var text = <text text-anchor="middle" dominant-baseline="middle" x="${bounds.x + bounds.width / 2}" y="${bounds.y + bounds.height / 2}">test</text>;
             setGuessRegion({ callout: mapLocations[Math.floor(mapLocations.length * Math.random())] });
@@ -40,9 +40,8 @@ export default function MapGuesserUI() {
     return <div>
         <MapSelector onMapChange={(data) => {
             setCurrentMapData(data);
-            curMap = data.mapInfo as MapJsonEntry | null
-            if (curMap != null) {
-                mapLocations = Object.values(curMap.regions);
+            if (data != null) {
+                mapLocations = Object.values(data.mapInfo.regionNames);
                 setGuessRegion({ callout: mapLocations[Math.floor(mapLocations.length * Math.random())] });
             }
         }} />

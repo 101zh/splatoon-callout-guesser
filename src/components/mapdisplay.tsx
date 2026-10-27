@@ -1,16 +1,17 @@
 import { type MouseEvent } from "react";
 import type { MapJsonEntry } from "./mapguesserUI";
+import { MAP_REGIONS } from "../assets/MapRegions";
+import MapSVG, { type RegionProps } from "./svg";
 
 const importedImages = import.meta.glob('../assets/splat3/splat3maps/*.png', { eager: true }) as Record<string, { default: string }>;
-const importedSVGs = import.meta.glob("../assets/splat3mapsSVG/*.tsx", { eager: true, query: "?react", import: 'default' });
+
+const splat3MapImageDir: string = "../assets/splat3/splat3maps/";
 
 interface MapDisplayProps {
     data: {
-        imagePath: string;
-        svgPath: string;
         mapInfo: MapJsonEntry;
     } | null;
-    onMapClick: (clickData: SVGPathElement | null ) => void;
+    onMapClick: (clickData: SVGPathElement | null) => void;
 }
 
 export default function MapDisplay({ onMapClick, data }: MapDisplayProps) {
@@ -19,15 +20,12 @@ export default function MapDisplay({ onMapClick, data }: MapDisplayProps) {
     }
 
     const curMap = data.mapInfo;
+    const imagePath = splat3MapImageDir + data.mapInfo.imgName;
 
-    const imageStr = importedImages[data.imagePath].default;
-    const MapSVG = importedSVGs[data.svgPath] as React.ComponentType<React.SVGProps<SVGSVGElement>>;
+    const imageStr = importedImages[imagePath].default;
 
-
-    function handleClick(e: MouseEvent<SVGSVGElement, globalThis.MouseEvent>) {
-        const path = (e.target as HTMLElement).closest("path");
-
-        onMapClick(path);
+    function handleClick(nextPathAttrs: RegionProps[], clickData: MouseEvent<SVGPathElement, globalThis.MouseEvent>, index: number) {
+        nextPathAttrs[index].fill = "rgb(255,0,0)";
     }
 
     return <div>
@@ -36,7 +34,10 @@ export default function MapDisplay({ onMapClick, data }: MapDisplayProps) {
             alt={"Map of " + curMap["name"]}
             className='absolute'
         />
-        <div></div>
-        <MapSVG onClick={(e) => handleClick(e)} className='absolute'></MapSVG>
+        <MapSVG
+            className="absolute"
+            calloutRegions={MAP_REGIONS[data.mapInfo.key]}
+            onRegionClick={handleClick}
+        />
     </div>
 }

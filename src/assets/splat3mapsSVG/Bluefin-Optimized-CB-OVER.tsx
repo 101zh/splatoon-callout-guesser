@@ -1,7 +1,6 @@
-import { type SVGProps } from "react"
-import { type ShapeProps, CreateMapSVG } from "../../components/svg";
+import { type RegionProps } from "../../components/svg";
 
-const SHAPES: ShapeProps[] = [
+export const BLUEFIN_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m24.223 173.99 0.34116 127.25 157.28 0.34117-1.0235-26.952-17.996-0.34116-0.51175-46.825-23.455 0.0853v-55.951l8.5146 0.30359 0.6678-66.565-21.167-0.29345-0.35568 27.853-16.434 1.385-13.193 13.496-0.56986 23.902-0.10875 2.3072z" },
     { id: "region02", fill: "#000", d: "m167.51 151.99 0.17058 19.788-20.299-0.17058v-20.129z" },
     { id: "region03", fill: "#000", d: "m171.04 151.74-0.24124 20.988 41.735-0.72372 0.24124-20.023z" },
@@ -19,7 +18,3 @@ const SHAPES: ShapeProps[] = [
     { id: "region15", fill: "#000", d: "m276.46 192.27-0.96496 77.921h62.481v-77.438z" },
     { id: "region16", fill: "#000", d: "m292.14 152.7 29.431-0.24124 0.48248 38.357-28.708-0.48248z" }
 ]
-
-export default function BluefinSVG(props: SVGProps<SVGSVGElement>) {
-    return CreateMapSVG(props, SHAPES);
-}

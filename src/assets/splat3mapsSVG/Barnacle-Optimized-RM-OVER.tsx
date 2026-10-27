@@ -1,7 +1,6 @@
-import { type SVGProps } from "react"
-import {type ShapeProps, CreateMapSVG} from "../../components/svg";
+import { type RegionProps } from "../../components/svg";
 
-const SHAPES: ShapeProps[] = [
+export const BARNACLE_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m268.37 138.38 33.08-0.46592 0.46592-13.978h43.797l-0.46592 81.07-18.171 0.93184-0.46592 15.841-58.066-0.70716z" },
     { id: "region02", fill: "#000", d: "m270.3 222.03 56.31 0.20812v-15.375h21.432l-0.46592 45.194-19.569 0.46592-1.3978 13.046-23.762-0.93184 0.46593-24.228-33.305 0.6906z" },
     { id: "region03", fill: "#000", d: "m263.25 274.89 40.069-9.7844 24.694 0.46592-0.93184 24.228h-49.388z" },
@@ -17,7 +16,3 @@ const SHAPES: ShapeProps[] = [
     { id: "region13", fill: "#000", d: "m145.83 195.69 28.421-0.46593-0.93184 16.307h-27.489z" },
     { id: "region14", fill: "#000", d: "m42.865 308.91-1.3978-126.73 93.65-0.46593 0.72372 14.236 9.4768-0.0165 0.0166 17.098 3.9686-0.24124 1.2062 23.696 8.1619-0.72372 0.70716 15.21 20.009-0.2578-0.48248 16.939-5.798 0.1062-0.24951 28.573-0.49904 25.593-10.026 1.2228 0.49904 16.74-30.976-4.418-16.981 0.0165-0.2578 6.5063-59.687 0.27436 0.29088-33.213z" }
 ]
-
-export default function BarnacleSVG(props: SVGProps<SVGSVGElement>) {
-    return CreateMapSVG(props, SHAPES);
-}
