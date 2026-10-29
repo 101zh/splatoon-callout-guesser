@@ -42,5 +42,24 @@
             "region15": "region15",
             "region16": "region16"
         }
+    },
+    "brinewater": {
+        "key" : "brinewater",
+        "name": "Brinewater Springs",
+        "imgName": "Brinewater-RM-OVER.png",
+        "regionNames": {
+            "region01": "region01",
+            "region02": "region02",
+            "region03": "region03",
+            "region04": "region04",
+            "region05": "region05",
+            "region06": "region06",
+            "region07": "region07",
+            "region08": "region08",
+            "region09": "region09",
+            "region10": "region10",
+            "region11": "region11",
+            "region12": "region12"
+        }
     }
 }
