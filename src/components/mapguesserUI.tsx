@@ -10,7 +10,11 @@ export interface MapJsonEntry {
     regionNames: Record<string, string>
 }
 
-export default function MapGuesserUI() {
+export interface ClassName {
+    className: string
+}
+
+export default function MapGuesserUI({ className }: ClassName) {
     const [currentMapData, setCurrentMapData] = useState<{ mapInfo: MapJsonEntry } | null>(null);
     const [mapCalloutPool, setMapCalloutPool] = useState<{ regionKeys: string[] } | null>(null)
     const [currentCalllout, setCallout] = useState<{ key: string, name: string } | null>(null);
@@ -62,7 +66,7 @@ export default function MapGuesserUI() {
         setMapCalloutPool({ regionKeys })
     }
 
-    return <div>
+    return <div className={className}>
         <MapSelector onMapChange={(data) => {
             setCurrentMapData(data);
             if (data != null) {

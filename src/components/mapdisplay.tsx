@@ -24,11 +24,11 @@ export default function MapDisplay({ onRegionClick, data }: MapDisplayProps) {
 
     const imageStr = importedImages[imagePath].default;
 
-    return <div>
+    return <div className="w-9/10 relative">
         <img
             src={imageStr}
             alt={"Map of " + curMap["name"]}
-            className='absolute'
+            className='object-contain w-1/1 h1/1 absolute'
         />
         <MapSVG
             key={data.mapInfo.key}
