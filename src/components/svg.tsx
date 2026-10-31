@@ -5,10 +5,12 @@ export interface RegionProps extends SVGProps<SVGPathElement> {
 }
 
 export interface MapSVGProps {
+    strokeSize: number
+    viewBox: string
     calloutRegions: RegionProps[];
     onRegionClick?: (
-        nextPathAttrs: RegionProps[], 
-        clickData: MouseEvent<SVGPathElement, globalThis.MouseEvent>, 
+        nextPathAttrs: RegionProps[],
+        clickData: MouseEvent<SVGPathElement, globalThis.MouseEvent>,
         index: number
     ) => void;
     className?: string;
@@ -18,7 +20,7 @@ export function Region({ id, ...props }: RegionProps): React.ReactElement<SVGPat
     return <path id={id} {...props} />
 }
 
-export default function MapSVG({ calloutRegions, onRegionClick, className }: MapSVGProps) {
+export default function MapSVG({ strokeSize, viewBox, calloutRegions, onRegionClick, className }: MapSVGProps) {
     const [pathAttrs, setPathAttrs] = useState<RegionProps[]>(calloutRegions);
 
     function handleClick(e: MouseEvent<SVGPathElement, globalThis.MouseEvent>, index: number) {
@@ -28,10 +30,10 @@ export default function MapSVG({ calloutRegions, onRegionClick, className }: Map
             setPathAttrs(nextPathAttrs);
         }
     }
-    
+
     return (
         <svg
-            viewBox="0 0 614.4 345.6"
+            viewBox={viewBox}
             className={className}
             xmlSpace="preserve"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +48,8 @@ export default function MapSVG({ calloutRegions, onRegionClick, className }: Map
                     onClick={(e) => handleClick(e, index)}
                     fillOpacity={0.5}
                     stroke="#000"
-                    strokeDasharray="2.4, 2.4"
-                    strokeWidth={2.4}
+                    strokeDasharray={`${strokeSize}, ${strokeSize}`}
+                    strokeWidth={strokeSize}
                 />
             )}
         </svg>

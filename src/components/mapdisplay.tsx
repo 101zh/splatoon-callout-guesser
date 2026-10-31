@@ -24,6 +24,8 @@ export default function MapDisplay({ onRegionClick, data }: MapDisplayProps) {
 
     const imageStr = importedImages[imagePath].default;
 
+    const SVGDATA = MAP_REGIONS[data.mapInfo.key];
+
     return <div className="w-9/10 relative">
         <img
             src={imageStr}
@@ -31,9 +33,11 @@ export default function MapDisplay({ onRegionClick, data }: MapDisplayProps) {
             className='object-contain w-1/1 h1/1 absolute'
         />
         <MapSVG
+            strokeSize={SVGDATA.strokeSize}
+            viewBox={SVGDATA.viewBox}
             key={data.mapInfo.key}
             className="absolute"
-            calloutRegions={MAP_REGIONS[data.mapInfo.key]}
+            calloutRegions={SVGDATA.regions}
             onRegionClick={onRegionClick}
         />
     </div>
