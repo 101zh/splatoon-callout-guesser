@@ -27,8 +27,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.51171875"
-     inkscape:cx="1280.9771"
-     inkscape:cy="599.93893"
+     inkscape:cx="640"
+     inkscape:cy="820.76336"
      inkscape:window-width="2240"
      inkscape:window-height="1294"
      inkscape:window-x="-11"
@@ -55,9 +55,10 @@
        style="fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:15;stroke-dasharray:15, 15;stroke-dashoffset:0"
        d="M 762.13672 873.52734 L 756.04492 1062.3652 L 758.22852 1031.8164 L 1033.4961 1031.8164 L 1037.4961 1137.3438 L 753.62695 1137.3438 L 750.41211 1237.0078 L 861.80078 1227.2363 L 855.93945 1139.2969 L 1042.5645 1143.207 L 1045.4961 1022.0449 L 1053.3125 875.48047 L 762.13672 873.52734 z " />
     <path
-       style="fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:15;stroke-dasharray:15,15;stroke-dashoffset:0"
-       d="m 392.79389,433.83206 1.9542,125.0687 -134.83969,11.72519 -1.9542,459.23665 177.83206,-1.9542 5.86259,136.7939 109.43512,7.8168 5.86259,107.4809 -287.26717,3.9084 1.9542,-117.2519 -230.595422,-19.542 -1.954199,-711.32824 z"
-       id="path1" />
+       style="fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:15;stroke-dasharray:15, 15;stroke-dashoffset:0"
+       d="m 392.79389,433.83206 1.9542,125.0687 -134.83969,11.72519 0,459.23665 11.72519,-1.9542 v 138.7481 L 41.038168,1147.1145 39.083969,435.78626 Z"
+       id="path1"
+       sodipodi:nodetypes="ccccccccc" />
     <path
        style="fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:15;stroke-dasharray:15, 15;stroke-dashoffset:0"
        d="m 259.9084,578.44275 9.77099,439.69465 209.09924,3.9084 -3.9084,-150.47328 58.62595,-1.9542 -1.9542,-107.48092 39.08397,3.9084 -3.90839,-197.37404 z"
@@ -106,5 +107,9 @@
        style="fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:15;stroke-dasharray:15, 15;stroke-dashoffset:0"
        d="m 1500.8244,289.22137 3.9084,152.42748 -150.4733,-3.90839 1.9542,146.56488 -148.519,1.9542 -1.9542,-297.03817 z"
        id="path15" />
+    <path
+       style="fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:15;stroke-dasharray:15,15;stroke-dashoffset:0"
+       d="m 271.63359,1280 3.90839,-244.2748 160.24428,1.9542 5.86259,132.8855 109.43512,1.9542 1.9542,107.4809 -146.56489,3.9084 z"
+       id="path16" />
   </g>
 </svg>
