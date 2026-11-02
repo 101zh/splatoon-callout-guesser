@@ -26,6 +26,9 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-## This repo
+## Tech Stack
 
-Vite + React + Tailwind CSS stack
+- Vite
+- React
+- Typescript
+- Tailwind CSS
