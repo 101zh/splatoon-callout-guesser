@@ -1,15 +1,17 @@
 from svgpathtools import Path, Line, QuadraticBezier, CubicBezier, Arc, svg2paths
 import pathlib
 
-directory_path = pathlib.Path("./src/assets/splat3mapsSVG/")
+svg_path = pathlib.Path("./src/assets/splat3/splat3mapRegions/svg")
+tsx_path = "./src/assets/splat3/splat3mapRegions/tsx"
 
-svg_files = [f for f in directory_path.rglob("*.svg") if f.is_file()]
-
-for file in svg_files:
-    if(file.name.__contains__("Optimized")):
+for file in svg_path.rglob("*.svg"):
+    if file.is_file():
         paths, attributes = svg2paths(file)
-        with open(directory_path._str+"/"+file.name[:-3] + "tsx", "w") as tsxFile:
-            tsxFile.write('import { type RegionProps } from "../../components/svg";\n')
+        name = (file.name[:-3] + "tsx")
+        index = name.index("-")
+        name = name[:index] + "-Optimized" + name[index:]
+        with open(tsx_path+"/"+name, "w") as tsxFile:
+            tsxFile.write('import { type RegionProps } from "../../../../components/svg";\n')
             tsxFile.write("\n")
             tsxFile.write(f"export const {file.name[:file.name.index("-")].upper()}_REGIONS: RegionProps[] = [\n")
             for i in range(len(paths)):
