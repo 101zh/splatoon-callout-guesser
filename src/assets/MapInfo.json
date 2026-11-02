@@ -2,7 +2,7 @@
     "barnacle": {
         "key": "barnacle",
         "name": "Barnacle & Dime",
-        "imgName": "Barnacle-RM-OVER.png",
+        "imgName": "Barnacle-RM-OVER.webp",
         "regionNames": {
             "region01": "Mid",
             "region02": "Snipe",
@@ -23,7 +23,7 @@
     "bluefin": {
         "key": "bluefin",
         "name": "Bluefin Depot",
-        "imgName": "Bluefin-CB-OVER.png",
+        "imgName": "Bluefin-CB-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Rock",
@@ -46,7 +46,7 @@
     "brinewater": {
         "key": "brinewater",
         "name": "Brinewater Springs",
-        "imgName": "Brinewater-RM-OVER.png",
+        "imgName": "Brinewater-RM-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Drop",
@@ -65,7 +65,7 @@
     "crableg": {
         "key": "crableg",
         "name": "Crableg Capital",
-        "imgName": "Crableg-TC-OVER.png",
+        "imgName": "Crableg-TC-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Perch",
@@ -85,7 +85,7 @@
     "eeltail": {
         "key": "eeltail",
         "name": "Eeltail Alley",
-        "imgName": "Eeltail-SZ-OVER.png",
+        "imgName": "Eeltail-SZ-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Cat",
@@ -108,7 +108,7 @@
     "flounder": {
         "key": "flounder",
         "name": "Flounder Heights",
-        "imgName": "Flounder-SZ-OVER.png",
+        "imgName": "Flounder-SZ-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Goal (RM)",
@@ -130,7 +130,7 @@
     "hagglefish": {
         "key": "hagglefish",
         "name": "Hagglefish Market",
-        "imgName": "Hagglefish-RM-OVER.png",
+        "imgName": "Hagglefish-RM-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Roof",
@@ -150,7 +150,7 @@
     "hammerhead": {
         "key": "hammerhead",
         "name": "Hammerhead Bridge",
-        "imgName": "Hammerhead-TC-OVER.png",
+        "imgName": "Hammerhead-TC-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Perch",
@@ -171,7 +171,7 @@
     "humpback": {
         "key": "humpback",
         "name": "Humpback Pump Track",
-        "imgName": "Humpback-TC-OVER.png",
+        "imgName": "Humpback-TC-OVER.webp",
         "regionNames": {
             "region01": "Perch (AKA Foam Pit)",
             "region02": "Spawn",
@@ -194,7 +194,7 @@
     "inkblot": {
         "key": "inkblot",
         "name": "Inkblot Art Academy",
-        "imgName": "Inkblot-TC-OVER.png",
+        "imgName": "Inkblot-TC-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Slick",
@@ -220,7 +220,7 @@
     "mahi-cb-rm": {
         "key": "mahi-cb-rm",
         "name": "Mahi-Mahi Resort Clam Blitz and Rainmaker",
-        "imgName": "Mahi-CB-OVER.png",
+        "imgName": "Mahi-CB-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Perch",
@@ -238,7 +238,7 @@
     "mahi-sz": {
         "key": "mahi-sz",
         "name": "Mahi-Mahi Resort Splat Zones",
-        "imgName": "Mahi-SZ-OVER.png",
+        "imgName": "Mahi-SZ-OVER.webp",
         "regionNames": {
             "region01": "Zone",
             "region02": "Spawn",
@@ -258,7 +258,7 @@
     "mahi-tc": {
         "key": "mahi-tc",
         "name": "Mahi-Mahi Resort Tower Control",
-        "imgName": "Mahi-TC-OVER.png",
+        "imgName": "Mahi-TC-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Perch",
@@ -277,7 +277,7 @@
     "makomart": {
         "key": "makomart",
         "name": "MakoMart",
-        "imgName": "MakoMart-SZ-OVER.png",
+        "imgName": "MakoMart-SZ-OVER.webp",
         "regionNames": {
             "region01": "Bats",
             "region02": "Perch",
@@ -299,7 +299,7 @@
     "manta": {
         "key": "manta",
         "name": "Manta Maria",
-        "imgName": "Manta-SZ-OVER.png",
+        "imgName": "Manta-SZ-OVER.webp",
         "regionNames": {
             "region01": "Boat",
             "region02": "Spawn",
@@ -323,7 +323,7 @@
     "marlin": {
         "key": "marlin",
         "name": "Marlin Airport",
-        "imgName": "Marlin-RM-OVER.png",
+        "imgName": "Marlin-RM-OVER.webp",
         "regionNames": {
             "region01": "Zoom",
             "region02": "Fan",
@@ -347,7 +347,7 @@
     "mincemeat": {
         "key": "mincemeat",
         "name": "Mincemeat Metalworks",
-        "imgName": "Mincemeat-RM-OVER.png",
+        "imgName": "Mincemeat-RM-OVER.webp",
         "regionNames": {
             "region01": "High Spawn",
             "region02": "Low Spawn (CB/SZ)",
@@ -371,7 +371,7 @@
     "museum": {
         "key": "museum",
         "name": "Museum d'Alfonsino",
-        "imgName": "Museum-RM-OVER.png",
+        "imgName": "Museum-RM-OVER.webp",
         "regionNames": {
             "region01": "Elbow",
             "region02": "Spawn",
@@ -395,7 +395,7 @@
     "robo": {
         "key": "robo",
         "name": "Robo ROM-en",
-        "imgName": "Robo-SZ-OVER.png",
+        "imgName": "Robo-SZ-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Long",
@@ -414,7 +414,7 @@
     "scorch": {
         "key": "scorch",
         "name": "Scorch Gorge",
-        "imgName": "Scorch-CB-OVER.png",
+        "imgName": "Scorch-CB-OVER.webp",
         "regionNames": {
             "region01": "Spawn",
             "region02": "Selfie",
@@ -437,7 +437,7 @@
     "shipshape": {
         "key": "shipshape",
         "name": "Shipshape Cargo Co.",
-        "imgName": "Shipshape-TC-OVER.png",
+        "imgName": "Shipshape-TC-OVER.webp",
         "regionNames": {
             "region01": "Bridge",
             "region02": "Pit",
@@ -460,7 +460,7 @@
     "sturgeon": {
         "key": "sturgeon",
         "name": "Sturgeon Shipyard",
-        "imgName": "Sturgeon-SZ-OVER.png",
+        "imgName": "Sturgeon-SZ-OVER.webp",
         "regionNames": {
             "region01": "Snipe",
             "region02": "Grates",
@@ -486,7 +486,7 @@
     "um_ami": {
         "key": "um_ami",
         "name": "Um'ami Ruins",
-        "imgName": "Um_ami-SZ-OVER.png",
+        "imgName": "Um_ami-SZ-OVER.webp",
         "regionNames": {
             "region01": "Top Mid",
             "region02": "Right Mid*",
@@ -507,7 +507,7 @@
     "undertow": {
         "key": "undertow",
         "name": "Undertow Spillway",
-        "imgName": "Undertow-SZ-OVER.png",
+        "imgName": "Undertow-SZ-OVER.webp",
         "regionNames": {
             "region01": "Bats",
             "region02": "Spawn",
@@ -533,7 +533,7 @@
     "wahoo": {
         "key": "wahoo",
         "name": "Wahoo World",
-        "imgName": "Wahoo-SZ-OVER.png",
+        "imgName": "Wahoo-SZ-OVER.webp",
         "regionNames": {
             "region01": "Bats",
             "region02": "Hill",

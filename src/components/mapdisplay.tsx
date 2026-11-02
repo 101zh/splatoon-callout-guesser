@@ -3,9 +3,12 @@ import type { MapJsonEntry } from "./mapguesserUI";
 import { MAP_REGIONS } from "../assets/MapRegions";
 import MapSVG, { type RegionProps } from "./svg";
 
-const importedImages = import.meta.glob('../assets/splat3/splat3maps/*.png', { eager: true }) as Record<string, { default: string }>;
+const importedImages = import.meta.glob('../assets/splat3/splat3maps/webp/*.webp', {
+    eager: true,
+    query: '?url'
+}) as Record<string, { default: string }>;
 
-const splat3MapImageDir: string = "../assets/splat3/splat3maps/";
+const splat3MapImageDir: string = "../assets/splat3/splat3maps/webp/";
 
 interface MapDisplayProps {
     data: {
