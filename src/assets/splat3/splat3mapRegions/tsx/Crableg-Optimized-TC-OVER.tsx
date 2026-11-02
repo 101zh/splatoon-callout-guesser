@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const CRABLEG_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m243.25 624.21 1.0052-464.39 52.269-48.248 472.43-4.0207 1.0052 112.58 62.32-9.8004 29.905-1.0554 77.457 1.6208 0.69537 209.16-86.002-0.35538-19.546-19.191h-62.192v2.843h-122.96l1.4215 230.29z" },

@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const EELTAIL_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m23.642 140.64v21.712l-19.54 0.24124-0.48248 55.968 18.817-0.48248 0.24124 17.369 30.155 0.24124 23.883 23.4 57.898 1.6887 0.48248-23.4-43.906-0.24124 0.72372-51.143 21.229-0.24124v-13.268l-20.505-0.48248v-24.365h-51.625l-0.24124-6.5135z" },

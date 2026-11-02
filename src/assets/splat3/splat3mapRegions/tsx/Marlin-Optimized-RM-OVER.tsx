@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const MARLIN_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m227.41 109.54-0.3203 20.019 58.454 0.32029v-20.179z" },

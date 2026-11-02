@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const WAHOO_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m509.59 426.67 93.475 39.199 81.413-94.982 75.383-54.276 49.753-18.092-40.707-81.413-81.413 39.199-63.322 45.23-60.306 64.829z" },

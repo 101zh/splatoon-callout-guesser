@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const HAMMERHEAD_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m25.016 120.53 31.459-0.37903 20.467 9.0966 15.161-0.75805 1.5161 39.419-17.814-0.75805 1.5161 28.806 38.661 0.75805 0.37903 19.709-36.386-0.37902-23.879 8.3386-32.596 0.37903z" },

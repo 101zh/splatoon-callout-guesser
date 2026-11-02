@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const MINCEMEAT_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m20.636 130.38-3.2831 161.81 99.43-1.407-0.93802-22.981-30.485 1.876 0.93802-37.99h-28.14v-63.316h15.477l0.46901-38.459z" },

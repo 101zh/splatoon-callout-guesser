@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const BLUEFIN_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m24.223 173.99 0.34116 127.25 157.28 0.34117-1.0235-26.952-17.996-0.34116-0.51175-46.825-23.455 0.0853v-55.951l8.5146 0.30359 0.6678-66.565-21.167-0.29345-0.35568 27.853-16.434 1.385-13.193 13.496-0.56986 23.902-0.10875 2.3072z" },

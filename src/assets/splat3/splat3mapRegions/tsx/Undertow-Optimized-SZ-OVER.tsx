@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const UNDERTOW_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m41.973 143.65h33.651l-5.0657 17.368-1.0855 51.381 13.388-0.36184v22.434l-44.868 0.36184-0.72368-75.262z" },

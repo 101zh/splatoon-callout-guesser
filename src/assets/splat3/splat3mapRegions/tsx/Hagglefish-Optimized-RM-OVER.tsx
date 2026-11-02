@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const HAGGLEFISH_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m104.61 111.43-0.37903 18.193-18.572 0.75805 1.1371 18.193-0.75805 63.297 4.5483 25.395-0.75805 41.693-51.926-0.75805-30.701-29.943v-98.547l32.596-38.661z" },

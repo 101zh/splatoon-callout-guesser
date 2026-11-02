@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const INKBLOT_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m585.91 863.86v-85.281h69.488l-12.634-232.15-86.86-1.5793-11.055-80.543 172.14-12.634 3.1586-277.95-270.06-15.793-44.22-20.531-86.86-4.7378 1.5793 60.012 6.3171 578.01h172.14l22.11 3.1586-6.3171 86.86z" },

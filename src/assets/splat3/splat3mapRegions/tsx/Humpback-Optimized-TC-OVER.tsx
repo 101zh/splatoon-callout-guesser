@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const HUMPBACK_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m 630.12955,314.27514 7.89636,159.50648 101.07341,-3.15855 3.15855,-153.18939 z" },

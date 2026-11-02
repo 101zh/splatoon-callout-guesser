@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const SCORCH_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m30.485 52.06-4.2211 73.165 11.725 18.76 28.609 0.93801 1.876-68.944 41.742-1.876-1.407-22.512z" },

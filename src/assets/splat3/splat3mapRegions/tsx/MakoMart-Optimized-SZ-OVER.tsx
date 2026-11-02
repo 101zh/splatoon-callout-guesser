@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const MAKOMART_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m578.01 1091.3 108.97 9.4756 126.34-4.7378 3.1585 123.18-127.92-9.4756-105.81-12.634z" },

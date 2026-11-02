@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const STURGEON_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m935.43 720.47 86.414-1.0802-1.0802 165.27-83.173-1.0802z" },

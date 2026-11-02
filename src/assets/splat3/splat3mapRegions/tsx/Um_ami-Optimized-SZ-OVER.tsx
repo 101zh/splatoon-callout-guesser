@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const UM_AMI_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m273.1 181.73-0.27139-23.248 45.23 0.36184 5.0657 4.7039 17.368 0.36183 0.72367 22.434h-45.23l-4.342-4.342z" },

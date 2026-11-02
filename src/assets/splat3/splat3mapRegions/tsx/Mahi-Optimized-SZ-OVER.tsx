@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const MAHI_REGIONS_SZ: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m279.39 153.7 55.63 1.2362v59.338l-55.218-0.82414z" },

@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const MUSEUM_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m200.27 127.1 0.46901 24.388 32.362 0.46901 1.876 26.733 9.8492 0.469v-51.122z" },

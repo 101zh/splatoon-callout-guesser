@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const MANTA_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m42.072 267.97 9.4756-5.6854h34.491l11.371 4.9273-10.992 7.5805-36.386-0.37903z" },

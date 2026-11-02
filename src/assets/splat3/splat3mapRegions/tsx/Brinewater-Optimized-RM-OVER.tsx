@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const BRINEWATER_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m64.17 213.26 58.38-0.24124 0.48248 55.968 15.681 16.163 0.24124 27.26h51.143l0.24124 22.435-92.636-0.48248-26.054-29.914 0.24124-52.832-8.4434-0.96496z" },

@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const SHIPSHAPE_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m752.82 1033.5-7.542 105.53h286.81l-4-105.53z" },

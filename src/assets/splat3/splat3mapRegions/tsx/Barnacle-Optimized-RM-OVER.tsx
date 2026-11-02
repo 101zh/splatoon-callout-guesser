@@ -1,4 +1,4 @@
-import { type RegionProps } from "../../components/svg";
+import { type RegionProps } from "../../../../components/svg";
 
 export const BARNACLE_REGIONS: RegionProps[] = [
     { id: "region01", fill: "#000", d: "m268.37 138.38 33.08-0.46592 0.46592-13.978h43.797l-0.46592 81.07-18.171 0.93184-0.46592 15.841-58.066-0.70716z" },
