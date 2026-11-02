@@ -1,7 +1,7 @@
 from svgpathtools import Path, Line, QuadraticBezier, CubicBezier, Arc, svg2paths
 import pathlib
 
-svg_path = pathlib.Path("./src/assets/splat3/splat3mapRegions/svg")
+svg_path = pathlib.Path("./src/assets/splat3/splat3mapRegions/svg/optimized")
 tsx_path = "./src/assets/splat3/splat3mapRegions/tsx"
 
 for file in svg_path.rglob("*.svg"):
