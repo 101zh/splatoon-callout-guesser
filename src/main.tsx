@@ -6,6 +6,8 @@ import Home from './pages/home';
 import Credits from './pages/credits';
 import './index.css';
 import Guesser from './pages/guesser';
+import Tutorial from './pages/tutorial';
+import FAQ from './pages/faq';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/guesser",
     element: <Guesser />,
+  },
+  {
+    path: "/faq",
+    element: <FAQ/>,
+  },
+  {
+    path: "/tutorial",
+    element: <Tutorial />,
   },
 ]);
 
